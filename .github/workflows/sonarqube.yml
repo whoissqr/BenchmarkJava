@@ -40,3 +40,10 @@ jobs:
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.organization=siguser \
           -Dsonar.projectKey=siguser_benchmarkjava-gh
+          scripts/runSonarQube.sh
+          createScorecards.sh
+      - name: upload score card
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-without-markdown
+          path: scorecard/Benchmark_*_Scorecard_for_SonarQube*.*
