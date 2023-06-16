@@ -102,4 +102,3 @@ cp resdump.json "${result_file}";
 echo "Done, please go ahead an generate the scorecard";
 ## cleanup the two files generated to record results, if want them for debug, you can comment the following line
 rm resdump.json buffdump.json;
-
