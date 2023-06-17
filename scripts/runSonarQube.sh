@@ -14,12 +14,12 @@ elements_per_request=20
 
 if [ ! -f scripts/SonarQubeCredentials.sh ]; then cat > scripts/SonarQubeCredentials.sh << EOF
 #!/usr/bin/env bash
-sonar_host="" # e. g. http://localhost:9000
+sonar_host="" 
 sonar_project=""
 sonar_token=""
 EOF
  chmod +x scripts/SonarQubeCredentials.sh
-fi 
+fi
 
 source scripts/SonarQubeCredentials.sh
 
@@ -28,7 +28,7 @@ if [ -z "$sonar_host" ] || [ -z "$sonar_project" ] || [ -z "$sonar_token" ]; the
   exit 1
 fi
 
-mvn sonar:sonar -Dsonar.projectKey="$sonar_project" -Dsonar.host.url="$sonar_host" -Dsonar.login="$sonar_token"
+mvn sonar:sonar -Dsonar.projectKey="$sonar_project" -Dsonar.host.url="$sonar_host" -Dsonar.login="$sonar_token" -Dsonar.organization=siguser
 
 sleep 300
 
