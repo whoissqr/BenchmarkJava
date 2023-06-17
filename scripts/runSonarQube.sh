@@ -36,6 +36,10 @@ benchmark_version=$(scripts/getBenchmarkVersion.sh)
 sonarqube_version=$(curl --silent -u "$sonar_token:" "$sonar_host/api/server/version")
 result_file="results/Benchmark_$benchmark_version-sonarqube-v$sonarqube_version.json"
 
+echo $benchmark_version
+echo $sonarqube_version
+echo $result_file
+
 # SonarQube does not provide a download option so we've to create the result file manually :(
 
 result='{"issues":[], "hotspots": []}'
