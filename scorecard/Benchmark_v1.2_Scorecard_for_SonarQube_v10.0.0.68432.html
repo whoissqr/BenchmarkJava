@@ -33,7 +33,6 @@
                     <li><a href="Scorecard_Home.html">Home</a></li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools<span class="caret"></span></a>
                         <ul class="dropdown-menu"><li><a href="Benchmark_v1.2_Scorecard_for_SonarQube_v10.0.0.68432.html">SonarQube v10.0.0.68432</a></li>
-<li><a href="Benchmark_v1.2_Scorecard_for_SonarQube_v8.0.0.42767.html">SonarQube v8.0.0.42767</a></li>
 
                         </ul></li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vulnerabilities<span class="caret"></span></a>
@@ -81,7 +80,7 @@
                 </tr>
                 <tr>
                     <th>Tool overall score (0-100)</th>
-                    <td>4.00%</td>
+                    <td>22.18%</td>
                 </tr>
                 <tr>
                     <th>Total test cases</th>
@@ -100,18 +99,18 @@
             <table class="table">
 <tr><th>Category</th><th>CWE #</th><th>TP</th><th>FN</th><th>TN</th><th>FP</th><th>Total</th><th>TPR</th><th>FPR</th><th>Score</th></tr>
 <tr class="danger"><td>Command Injection</td><td>78</td><td>0</td><td>126</td><td>125</td><td>0</td><td>251</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
-<tr class="danger"><td>Insecure Cookie</td><td>614</td><td>0</td><td>36</td><td>31</td><td>0</td><td>67</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
+<tr class="success"><td>Insecure Cookie</td><td>614</td><td>36</td><td>0</td><td>31</td><td>0</td><td>67</td><td>100.00%</td><td>0.00%</td><td>100.00%</td></tr>
 <tr class="danger"><td>LDAP Injection</td><td>90</td><td>0</td><td>27</td><td>32</td><td>0</td><td>59</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
 <tr class="danger"><td>Path Traversal</td><td>22</td><td>0</td><td>133</td><td>135</td><td>0</td><td>268</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
-<tr class="danger"><td>SQL Injection</td><td>89</td><td>0</td><td>272</td><td>232</td><td>0</td><td>504</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
+<tr class="danger"><td>SQL Injection</td><td>89</td><td>272</td><td>0</td><td>0</td><td>232</td><td>504</td><td>100.00%</td><td>100.00%</td><td>0.00%</td></tr>
 <tr class="danger"><td>Trust Boundary</td><td>501</td><td>0</td><td>83</td><td>43</td><td>0</td><td>126</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
 <tr ><td>Weak Encryption Algorithm</td><td>327</td><td>65</td><td>65</td><td>109</td><td>7</td><td>246</td><td>50.00%</td><td>6.03%</td><td>43.97%</td></tr>
 <tr class="danger"><td>Weak Hashing Algorithm</td><td>328</td><td>0</td><td>129</td><td>107</td><td>0</td><td>236</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
-<tr class="danger"><td>Weak Randomness</td><td>330</td><td>0</td><td>218</td><td>275</td><td>0</td><td>493</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
+<tr class="success"><td>Weak Randomness</td><td>330</td><td>218</td><td>0</td><td>275</td><td>0</td><td>493</td><td>100.00%</td><td>0.00%</td><td>100.00%</td></tr>
 <tr class="danger"><td>XPath Injection</td><td>643</td><td>0</td><td>15</td><td>20</td><td>0</td><td>35</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
 <tr class="danger"><td>XSS (Cross-Site Scripting)</td><td>79</td><td>0</td><td>246</td><td>209</td><td>0</td><td>455</td><td>0.00%</td><td>0.00%</td><td>0.00%</td></tr>
-<tr><th>Totals</th><th/><th>65</th><th>1350</th><th>1318</th><th>7</th><th>2740</th><th/><th/><th/></tr>
-<tr><th>Overall Results*</th><th/><th/><th/><th/><th/><th/><th>4.55%</th><th>0.55%</th><th>4.00%</th></tr>
+<tr><th>Totals</th><th/><th>591</th><th>824</th><th>1086</th><th>239</th><th>2740</th><th/><th/><th/></tr>
+<tr><th>Overall Results*</th><th/><th/><th/><th/><th/><th/><th>31.82%</th><th>9.64%</th><th>22.18%</th></tr>
 </table><p>*-The Overall Results are averages across all the vulnerability categories.  You can't compute these averages by simply calculating the TPR and FPR rates using the values in the Totals row. If you did that, categories with larger number of tests would carry  more weight than categories with less tests. The proper calculation of the Overall Results is to add up the values of each of these per row,  then divide by the number of rows, which is how they are calculated.<p/>
             <p />
 
